@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primary-color: #1ebfc1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* ================ Common ====================== */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  line-height: 68px;
+  border-radius: 14px;
+  background: var(--primary-color);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================ Header ====================== */
+.header {
+  padding: 52px 0 0;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-bar {
+  margin-left: auto;
+}
+
+.header .nav-bar ul {
+  display: flex;
+  gap: 39px;
+}
+
+.header .nav-bar a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header .nav-bar a.active,
+.header .ctn .sign-in:hover {
+  text-shadow: 1px 0px 0px #2f3a3b;
+}
+
+.header .ctn {
+  margin-left: 177px;
+}
+
+.header .ctn .sign-in {
+  padding: 6px 12px;
+  color: #494949;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header .ctn .sign-up {
+  margin-left: 12px;
+  min-width: 108px;
+  line-height: 48px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================ Main ====================== */
+.header {
+  position: sticky;
+  top: -50px;
+  z-index: 1;
+  background: #fff;
+}
+
+.hero {
+  padding: 50px 0 79px;
+  background: #fff;
+}
+
+.hero .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .text-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 39%;
+}
+
+.hero .text-blog .slogan {
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero .text-blog h1 {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+
+.hero .text-blog .desc {
+  margin-top: 46px;
+  width: 374px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.78; /* 177.778% */
+}
+
+.hero .text-blog .link {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.hero .text-blog .link .icon-video {
+  padding-top: 44px;
+}
+
+.hero .image-blog {
+  position: relative;
+}
+
+.hero .image-blog .image {
+  width: 576px;
+  height: 631px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.hero .image-blog .courses {
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  height: 75px;
+  padding: 17px 0 0 25px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .image-blog .schedule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 46px;
+  left: -65px;
+  width: 124px;
+  height: 132px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .image-blog .avatar-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 41px;
+  right: 45px;
+  width: 207px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .avatar-blog .desc {
+  color: #0d1111;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.hero .avatar-blog .avatar-list {
+  margin-top: 8px;
+}
+
+.hero .avatar-list .avatar {
+  margin-left: -10px;
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.hero .avatar-list .avatar:first-child {
+  margin-left: 0;
+}
+
+/* Features */
+.features {
+  padding-top: 130px;
+  background: #fff;
+}
+
+.features .body {
+  width: 1024px;
+  flex-direction: column;
+}
+
+.features span {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.features .sub-title {
+  width: 577px;
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 133.333% */
+}
+
+.features .feature-top .desc {
+  width: 590px;
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.features .feature-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.feature-bottom .feature-item.live-class {
+  width: 16%;
+}
+
+.feature-bottom .feature-item.discuss {
+  width: 22%;
+}
+
+.feature-bottom .feature-item.task {
+  width: 22%;
+}
+
+.feature-bottom .sub-title {
+  margin-top: 26px;
+  color: #0d1111;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.feature-bottom .desc {
+  --line-clamp: 3;
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.69; /* 168.75% */
+}
+
+/* Courses */
+.courses {
+  padding-top: 130px;
+  background: #fff;
+}
+
+.courses span {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.courses .sub-title {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.courses .desc {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses .desc p {
+  width: 525px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.courses .desc a {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.courses .courses-bottom {
+  margin-top: 79px;
+}
