@@ -477,3 +477,166 @@ a:hover {
   border-radius: 50%;
   background: var(--primary-color);
 }
+
+/* Countdown */
+.countdown {
+  margin-top: 389px;
+  background: #fff;
+}
+
+.countdown .body {
+  width: 862px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countdown ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px 0;
+}
+
+.countdown .value {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.countdown .label {
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Testimonial */
+.testimonial {
+  margin-top: 264px;
+  background: #fff;
+}
+
+.testimonial .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial .text {
+  width: 36%;
+}
+
+.testimonial .text .quotation {
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+.testimonial .author {
+  position: relative;
+  margin: 33px 0 0 12px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.testimonial .author span {
+  color: #070707;
+  font-weight: 500;
+}
+
+.testimonial .author::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+}
+
+.testimonial .icon-page-turn {
+  margin-top: 52px;
+  width: 130px;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.testimonial .image {
+  position: relative;
+  width: 58%;
+  height: 481px;
+  flex-shrink: 0;
+}
+
+.testimonial .image .avatar-01,
+.testimonial .image .avatar-02,
+.testimonial .image .avatar-03 {
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .image .avatar-01 {
+  position: absolute;
+  top: 258px;
+  left: 0;
+}
+
+.testimonial .image .avatar-02 {
+  position: absolute;
+  bottom: 0;
+  right: 389px;
+}
+
+.testimonial .image .avatar-03 {
+  position: absolute;
+  bottom: 29px;
+  right: 32px;
+}
+
+.testimonial .image .avatar-04 {
+  position: absolute;
+  top: 0;
+  right: 443px;
+  width: 92px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .image .avatar-06 {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .image .avatar-05 {
+  position: absolute;
+  top: 110px;
+  right: 171px;
+  width: 235px;
+  height: 235px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
