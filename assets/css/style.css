@@ -640,3 +640,89 @@ a:hover {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* Action */
+.action {
+  margin-top: 130px;
+  background: #def6f5;
+}
+
+.action .body {
+  display: flex;
+  align-items: center;
+  height: 272px;
+  flex-shrink: 0;
+}
+
+.action .subtitle {
+  color: #070707;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.action .desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.action .link {
+  margin-left: 410px;
+}
+
+/* ================ Footer ====================== */
+.footer {
+  background: #fff;
+}
+
+.footer .body {
+  padding: 130px 0 50px;
+}
+
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .info .subtitle {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.footer .info ul {
+  margin-top: 17px;
+}
+
+.footer .info li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.footer .info a {
+  color: #535353;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer .info .icon-social {
+  margin-right: 8px;
+}
+
+.footer .copyright {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer .copyright .desc {
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
